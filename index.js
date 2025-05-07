@@ -7,17 +7,29 @@ class Vector {
     this.y = y;
   }
 
+  get length() {
+    return Math.hypot(this.x, this.y);
+  }
+
+  set length(v) {
+    this.scale(v / this.length);
+  }
+
+  getLength() {
+    return this.length;
+  }
+
+  setLength(v) {
+    this.length = v;
+  }
+
   scale(s) {
     this.x *= s;
     this.y *= s;
   }
 
-  get length() {
-    return Math.hypot(this.x, this.y);
-  }
-
-  set length(val) {
-    this.scale(val / this.length);
+  normalize() {
+    this.length = 1;
   }
 }
 
