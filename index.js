@@ -31,6 +31,19 @@ class Vector {
   normalize() {
     this.length = 1;
   }
+
+  setX(v) {
+    this.x = v;
+  }
+
+  setY(v) {
+    this.y = v;
+  }
+
+  set(x, y) {
+    this.x = x;
+    this.y = y;
+  }
 }
 
 export { Vector as default, Vector, Vector as Vec};
