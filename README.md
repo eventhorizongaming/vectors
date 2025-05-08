@@ -4,6 +4,12 @@
 
 A small, 2D vector library
 
+## Todo
+
+- Create NPM package
+- Add Bézier curve function
+- Organize folder structure
+
 # Documentation
 
 The Vector class represents a 2D vector with x and y components. It provides various methods and properties to manipulate and perform operations on vectors.
