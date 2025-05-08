@@ -21,15 +21,21 @@ class Vector {
 
   setLength(v) {
     this.length = v;
+
+    return this;
   }
 
   scale(s) {
     this.x *= s;
     this.y *= s;
+
+    return this;
   }
 
   normalize() {
     this.length = 1;
+
+    return this;
   }
 
   getX() {
@@ -38,6 +44,8 @@ class Vector {
 
   setX(v) {
     this.x = v;
+
+    return this;
   }
 
   getY() {
@@ -46,11 +54,15 @@ class Vector {
 
   setY(v) {
     this.y = v;
+
+    return this;
   }
 
   set(x, y) {
     this.x = x;
     this.y = y;
+
+    return this;
   }
 
   get angle() {
@@ -67,6 +79,8 @@ class Vector {
 
   setAngle(v) {
     this.angle = v;
+
+    return this;
   }
 
   clone() {
