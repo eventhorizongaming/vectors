@@ -44,6 +44,22 @@ class Vector {
     this.x = x;
     this.y = y;
   }
+
+  get angle() {
+    return Math.atan2(this.y, this.x);
+  }
+
+  set angle(v) {
+    this.set(Math.cos(v) * this.length, Math.sin(v) * this.length);
+  }
+
+  getAngle() {
+    return this.angle;
+  }
+
+  setAngle(v) {
+    this.angle = v;
+  }
 }
 
 export { Vector as default, Vector, Vector as Vec};
