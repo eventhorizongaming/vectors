@@ -102,6 +102,10 @@ class Vector {
   static dot(vec1, vec2) {
     return (vec1.x * vec2.x) + (vec1.y * vec2.y);
   }
+
+  static interpolate(vec1, vec2, amt) {
+    return new Vector(vec1.x + (vec2.x - vec1.x) * amt, vec1.y + (vec2.y - vec1.y) * amt);
+  }
 }
 
 export { Vector as default, Vector, Vector as Vec};
