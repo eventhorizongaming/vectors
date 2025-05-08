@@ -68,6 +68,14 @@ class Vector {
   setAngle(v) {
     this.angle = v;
   }
+
+  clone() {
+    return new Vector(this.x, this.y);
+  }
+
+  toArray() {
+    return [this.x, this.y];
+  }
 }
 
 export { Vector as default, Vector, Vector as Vec};
