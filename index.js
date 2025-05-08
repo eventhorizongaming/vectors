@@ -32,8 +32,16 @@ class Vector {
     this.length = 1;
   }
 
+  getX() {
+    return this.x;
+  }
+
   setX(v) {
     this.x = v;
+  }
+
+  getY() {
+    return this.y;
   }
 
   setY(v) {
