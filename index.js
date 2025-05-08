@@ -106,6 +106,18 @@ class Vector {
   static interpolate(vec1, vec2, amt) {
     return new Vector(vec1.x + (vec2.x - vec1.x) * amt, vec1.y + (vec2.y - vec1.y) * amt);
   }
+
+  add(vec) {
+    return Vector.add(this, vec);
+  }
+
+  sub(vec) {
+    return Vector.sub(this, vec);
+  }
+
+  dot(vec) {
+    return Vector.dot(this, vec);
+  }
 }
 
 export { Vector as default, Vector, Vector as Vec};
